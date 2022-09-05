@@ -1,0 +1,320 @@
+/* ultilizo o root para criar algumas variaveis para definir a cor do projeto */
+:root {
+  --bg: #151515;
+  --color-card: #1B1F24;
+  --color-title: #1976D2;
+  --color-contato: #565656;
+
+}
+
+/* Reseto a margem e padding, coloco a fonte que sera usada no projeto */
+* {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+
+
+
+}
+
+/* Defino o container para ultilizar o display grid, sera 5 linhas e 3 colunas */
+.container {
+  /* border: 10px solid red; */
+  display: grid;
+  padding: 0;
+  grid-template: auto auto auto auto auto / auto auto auto;
+
+
+
+}
+
+/* secao que define a localização do cabecalho do projeto */
+.r1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.menu {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.menu li {
+  margin: 0 20px;
+  padding: 0 10px;
+  background-color: var(--color-title);
+  border-radius: 40px;
+
+  list-style: none;
+}
+
+
+.menu a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+
+
+
+/* secao responsavel por denifir a localizacao do card de resumo pessoal */
+.r2 {
+  /* border: 2px red solid; */
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  /* height: auto; */
+  /* width: 400px; */
+  color: white;
+  text-align: justify;
+
+}
+
+.card-perfil {
+  background-color: #241b1e;
+  border-radius: 40px;
+  display: flex;
+
+  /* border: 10px solid rgb(179, 21, 21); */
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: fit-content;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  /* border: 1px solid blue; */
+
+
+}
+
+.logo h2 {
+  margin-left: 10px;
+  color: var(--color-title);
+  font-weight: bold;
+}
+
+#perfil-img {
+  display: flex;
+  margin: auto;
+  margin-bottom: 40px;
+  width: 230px;
+}
+
+.card-f {
+  margin-top: 10px;
+  display: flex;
+  /* border: 2px solid red; */
+
+}
+
+.card-f img {
+  width: 60px;
+  margin: 20px;
+}
+
+.card-f img:hover {
+  width: 70px;
+  transition: scale(1.5);
+}
+
+
+
+
+/* secao responsavel por definir a localização da secao sobre */
+.r3 {
+  /* border: 2px red solid; */
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  color: white;
+  text-align: justify;
+  max-height: 100%;
+  margin-bottom: 100px;
+
+
+}
+
+.r3 hr {
+  margin-top: 0;
+  color: var(--color-title);
+  width: 20%;
+
+
+  border: 2px solid var(--color-title);
+
+}
+
+.r3 h1 {
+  color: var(--color-title);
+  font-weight: bold;
+
+}
+
+/* Estilizando o botao de download do curriculo */
+.r3 button {
+  margin-top: 50px;
+  width: 40%;
+  border-radius: 40px;
+}
+
+.r3 a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+
+}
+
+/* secao responsavel por definir a localizacao da secao Informaçao profissional */
+.r4 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 3;
+
+  /* height: 400px; */
+  /* border: 2px red solid; */
+}
+
+
+.cards {
+  /* border: 2px red solid; */
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-around;
+  text-align: center;
+}
+
+/* Estilizando os meus titulos */
+
+.title {
+  color: var(--color-title);
+  text-align: center;
+  margin: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card {
+
+  /* border: 2px blue solid; */
+  color: #ffffff;
+  background-color: var(--color-card);
+  width: 300px;
+  height: 500px;
+  padding: 20px;
+  border-radius: 20px;
+  justify-content: space-between;
+
+}
+
+
+.card-icons {
+  display: flex;
+  /* border: 2px solid blue; */
+  justify-content: space-around;
+
+
+}
+
+.card-icons img {
+  max-width: 40px;
+}
+
+/*  secao que define a localização do portfolio no projeto*/
+
+/* aqui utilizei o carrocel do bootstrap, definir alguns paramentro para botoes proprios */
+.r5 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 4;
+
+
+}
+
+
+.r6 {
+  /* border: 2px solid red; */
+  grid-column: 1 / 4;
+  grid-row: 5 / 6;
+  margin-top: 20px;
+
+
+
+}
+
+.form-cont {
+  /* border: 2px solid blue; */
+  /* border: none; */
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+
+
+
+
+}
+
+.form-cont label {
+  /* border: 2px red solid; */
+  color: var(--color-contato);
+  font-size: 20px;
+  opacity: 0.8;
+
+}
+
+.form-cont input {
+  /* border: 2px red solid; */
+  border: none;
+  border-bottom: 1px solid var(--color-contato);
+  outline: none;
+  background-color: transparent;
+  width: 40%;
+  color: #ffffff;
+  font-size: 16px;
+  margin: 20px auto;
+}
+
+.form-cont textarea {
+  background-color: transparent;
+  color: #ffffff;
+  width: 40%;
+  margin: 20px auto;
+
+
+}
+
+.buttom {
+  display: flex;
+  justify-content: center;
+}
+
+.buttom input {
+  width: 40%;
+  height: 40%;
+  background-color: var(--color-title);
+  border: none;
+  color: #ffffff;
+  border-radius: 20px;
+  margin: 10px 0;
+}
